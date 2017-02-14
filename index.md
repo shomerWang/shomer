@@ -144,11 +144,10 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 <body>
 
 <div class="container">
-
-  <p><a herf="//shomerWang/shomerpage/litemap.md">litemap</a></p>
   <div class="header"><img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" />
     <!-- end .header --></div>
   <div class="content">
+  <p><a herf="https://raw.githubusercontent.com/shomerWang/shomerpage/litemap.md">litemap</a></p>
     TGOS MAP API
 <div class="TGMap" id="TGMap" style="width: 640px; height: 500px; border: 1px solid #C0C0C0;">
     </div>
