@@ -10,10 +10,10 @@
 <!--
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background-color:#B3DDFF;
+	background-color: #B3DDFF;
 	margin: 0;
 	padding: 0;
-	color:#B3DDFF;
+	color: #000000;
 }
 
 /* ~~ 元素/標籤選取器 ~~ */
@@ -41,6 +41,7 @@ a:visited {
 }
 a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽的使用者，也和使用滑鼠的使用者一樣擁有相同的滑過體驗。 */
 	text-decoration: none;
+	color: #000;
 }
 
 /* ~~ 這個容器環繞著所有其他的 Div，並依百分比設定其寬度 ~~ */
@@ -99,15 +100,15 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 <body>
 
 <div class="container">
-  <div class="header"><img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" />
-  <h1>祖修的網頁</h1>
-    <!-- end .header --></div>
+  <div class="header">
+    <p><img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" /></p>
+  </div>
   <div class="content">
   <iframe width="100%" height="520" frameborder="0" src="https://shomerwang.carto.com/viz/61869c0c-d25a-11e6-953c-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
   
 </div>
   <div class="footer">
-    <h2><a herf="mailto:shomerwang@gmail.com">聯絡我</a></h2>
+    <h2><a href="mailto:shomerwang@gmail.com">聯絡我</a></h2>
     <!-- end .footer --></div>
   <!-- end .container --></div>
 </body>
