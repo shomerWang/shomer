@@ -150,7 +150,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 	</script>
 </head>
 
-<body  style="margin:0px" onload="InitWnd();">
+<body>
 
 <div class="container">
   <div class="header">
