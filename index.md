@@ -154,7 +154,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
     </div>
 </div>
   <div class="footer">
-    <h2><a herf="mailto:shomerwang@gmail.com">聯絡我</a></h2>
+    <h2><a herf="mailto:shomerwang@gmail.com">#聯絡我</a></h2>
     <!-- end .footer --></div>
   <!-- end .container --></div>
 </body>
