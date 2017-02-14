@@ -55,7 +55,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 
 /* ~~頁首沒有指定的寬度，而會橫跨版面的整個寬度。頁首包含影像預留位置，必須由您自己的連結商標加以取代~~ */
 .header {
-	background-color: #6F7D94;
+	background-color: #00589F;
 }
 
 /* ~~ 這是版面資訊。~~ 
@@ -75,7 +75,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 /* ~~ 頁尾 ~~ */
 .footer {
 	padding: 10px 0;
-	background-color: #6F7D94;
+	background-color: #B3DDFF;
 }
 
 /* ~~ 其他 float/clear 類別 ~~ */
@@ -99,7 +99,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 <body>
 
 <div class="container">
-  <div class="header"><a href="#"><img src="" alt="在這裡插入商標" name="Insert_logo" width="20%" height="90" id="Insert_logo" style="background-color: #8090AB; display:block;" /></a> 
+  <div class="header"><img src="file:///C|/Users/祖修/Documents/GitHub/shmerpage/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" />
     <!-- end .header --></div>
   <div class="content">
     <h1>王祖修的網頁</h1>
