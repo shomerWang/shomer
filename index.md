@@ -147,6 +147,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
   <div class="header"><img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" />
     <!-- end .header --></div>
   <div class="content">
+  <iframe width="100%" height="520" frameborder="0" src="https://shomerwang.carto.com/viz/61869c0c-d25a-11e6-953c-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
   <p><a herf="https://shomerwang.github.io/shomerpage/litemap.html">litemap</a></p>
     TGOS MAP API
 <div class="TGMap" id="TGMap" style="width: 640px; height: 500px; border: 1px solid #C0C0C0;">
