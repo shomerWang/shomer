@@ -99,7 +99,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 <body>
 
 <div class="container">
-  <div class="header"><img src="file:///C|/Users/祖修/Documents/GitHub/shmerpage/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" />
+  <div class="header"><img src="shomerpage/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" />
     <!-- end .header --></div>
   <div class="content">
     <h1>王祖修的網頁</h1>
