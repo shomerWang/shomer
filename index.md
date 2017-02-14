@@ -93,52 +93,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 	line-height: 0px;
 }
 -->
-  <script type="text/javascript" src="https://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=x+JLVSx85Lk=&APIKey=in8W74q0ogpcfW/STwicK8D5QwCdddJf05/7nb+OtDh8R99YN3T0LurV4xato3TpL/fOfylvJ9Wv/khZEsXEWxsBmg+GEj4AuokiNXCh14Rei21U5GtJpIkO++Mq3AguFK/ISDEWn4hMzqgrkxNe1Q=="charset="utf-8"></script>
-           <script type="text/javascript">
-                     var messageBox;                    //訊息視窗物件  
-                     var pMap;                      //初始化地圖物件
-                    
-                     //------------------------------須自行修改的參數,包含點位坐標,訊息視窗內容及圖示檔案來源設定------------------------------
-                     var infotext = '<B>公司點</B><br>基金會辦公室';         //地標名稱及訊息視窗內容
-                     var markerPoint = new TGOS.TGPoint(121.533684 , 25.014829);                              //地標坐標位置
-                     var imgUrl = "http://api.tgos.tw/TGOS_API/images/marker2.png";         //標記點圖示來源
-                     //------------------------------若網頁介面依照範例網頁的預設設定,以下程式碼可不修改---------------------------------------
-                     function InitWnd()
-                     {
-                                //------------------初始化地圖--------------------
-                                var pOMap = document.getElementById("OMap");
-                                var mapOptiions = {
-                                           scaleControl: true,                //不顯示比例尺
-                                           navigationControl: true,     //顯示地圖縮放控制項
-                                           navigationControlOptions: {        //設定地圖縮放控制項
-                                                     controlPosition: TGOS.TGControlPosition.TOP_LEFT,  //控制項位置
-                                                     navigationControlStyle: TGOS.TGNavigationControlStyle.SMALL         //控制項樣式
-                                           },
-                                           mapTypeControl: false                   //不顯示地圖類型控制項
-                                };
-                                pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3857, mapOptiions);//建立地圖,選擇TWD97坐標
-                                pMap.setZoom(11);                                   //初始地圖縮放層級
-                                pMap.setCenter(markerPoint);   //初始地圖中心點
-                                //------------------建立標記點---------------------
-                                var markerImg = new TGOS.TGImage(imgUrl, new TGOS.TGSize(38, 33), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(10, 33));       //設定標記點圖片及尺寸大小
-                                var pTGMarker = new TGOS.TGMarker(pMap, markerPoint,'', markerImg); //建立機關單位標記點
-                                //-----------------建立訊息視窗--------------------
-                                var InfoWindowOptions = {
-                                             maxWidth:4000,       //訊息視窗的最大寬度
-                                             pixelOffset: new TGOS.TGSize(5, -30),         //InfoWindow起始位置的偏移量, 使用TGSize設定, 向右X為正, 向上Y為負 
-                                             zIndex:99                                //視窗堆疊順序
-                                };                                       
-                                messageBox = new TGOS.TGInfoWindow(infotext, markerPoint, InfoWindowOptions);          //建立訊息視窗                                                                  
-                                TGOS.TGEvent.addListener(pTGMarker, "mouseover", openInfoWindow);   //滑鼠監聽事件--開啟訊息視窗
-                                TGOS.TGEvent.addListener(pTGMarker, "mouseout", closeInfoWindow);     //滑鼠監聽事件--關閉訊息視窗
-                     }
-                     function openInfoWindow() {      //開啟訊息視窗函式
-                                messageBox.open(pMap);
-                     }
-                     function closeInfoWindow() {      //關閉訊息視窗函式
-                                messageBox.close();
-                     }
-           </script>
+ 
 </style></head>
 
 <body>
@@ -148,10 +103,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
     <!-- end .header --></div>
   <div class="content">
   <iframe width="100%" height="520" frameborder="0" src="https://shomerwang.carto.com/viz/61869c0c-d25a-11e6-953c-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  <p><a herf="https://shomerwang.github.io/shomerpage/litemap.html">litemap</a></p>
-    TGOS MAP API
-<div class="TGMap" id="TGMap" style="width: 640px; height: 500px; border: 1px solid #C0C0C0;">
-    </div>
+  
 </div>
   <div class="footer">
     <h2><a herf="mailto:shomerwang@gmail.com">聯絡我</a></h2>
