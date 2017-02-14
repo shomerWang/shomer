@@ -7,6 +7,7 @@
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
  <link type="text/css" rel="stylesheet" href="shomerpage/css.css">
+ <link href="/shomerpage/css.css?v=3b5d20dcd11c8fdaaa6f82d3bb19f77852499a8b" rel="stylesheet">
 </head>
 
 <body>
