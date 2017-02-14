@@ -2,7 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>無標題文件</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 <style type="text/css">
 <!--
 body {
@@ -49,6 +53,11 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 	margin: 0 auto; /* 兩側的自動值與寬度結合後，版面便會置中對齊。如果將 .container 的寬度設為 100%，就不需要這麼做。 */
 }
 
+/* ~~頁首沒有指定的寬度，而會橫跨版面的整個寬度。頁首包含影像預留位置，必須由您自己的連結商標加以取代~~ */
+.header {
+	background-color: #6F7D94;
+}
+
 /* ~~ 這是版面資訊。~~ 
 
 1) 欄位間隔只會置於 Div 的頂端或底部。此 Div 內的元素在兩側會有欄位間隔，可讓您不需進行「方塊模型計算」。請記住，如果對 Div 本身加入任何側邊的欄位間隔或邊框，在計算「總」寬度時，就會將這些加入您定義的寬度。您也可以選擇移除 Div 中元素的欄位間隔，然後在其中放置沒有寬度的第二個 Div，並依設計所需放置欄位間隔。
@@ -63,6 +72,12 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 	padding: 0 15px 15px 40px; /* 這個欄位間隔反映出上方標題和段落規則中的右方間隔。當欄位間隔位於下方時，便可將清單中的其他元素間隔開來；當位於左方時，則可藉此建立縮排。這些動作均可依需要進行調整。 */
 }
 
+/* ~~ 頁尾 ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+}
+
 /* ~~ 其他 float/clear 類別 ~~ */
 .fltrt {  /* 這個類別可用來讓元素在頁面中浮動，浮動的元素必須位於頁面上相鄰的元素之前。 */
 	float: right;
@@ -72,7 +87,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 	float: left;
 	margin-right: 8px;
 }
-.clearfloat { /* 這個類別可放置在 <br /> 或空白的 Div 上，當做接在 #container 內最後一個浮動 Div 後方的最後一個元素 (如果已移除 .container 上的 overflow:hidden) */
+.clearfloat { /* 這個類別可放置在 <br /> 或空白的 Div 上，當做接在 #container 內最後一個浮動 Div 後方的最後一個元素 (如果從 #container 移除或取出 #footer) */
 	clear:both;
 	height:0;
 	font-size: 1px;
@@ -84,13 +99,21 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 <body>
 
 <div class="container">
+  <div class="header"><a href="#"><img src="" alt="在這裡插入商標" name="Insert_logo" width="20%" height="90" id="Insert_logo" style="background-color: #8090AB; display:block;" /></a> 
+    <!-- end .header --></div>
   <div class="content">
     <h1>說明</h1>
     <p>請注意，這些版面的 CSS 都有詳細的註解。如果您是在「設計」檢視中進行大部分的作業，可以看一下程式碼來取得有關使用流動版面 CSS 的提示。您可以在啟動您的網站之前，將這些註解移除。有關這些 CSS 版面所使用的技巧之詳細資訊，請至 Adobe 開發人員中心閱讀本文 - <a href=http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts</a>。</p>
     <h2>版面</h2>
-    <p>由於這是單欄的版面，所以 .content 並非浮動。如果在 .container 內加入 .footer，它只會接在 .content Div 後面。 </p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p>由於這是單欄的版面，所以 .content 並非浮動。 </p>
+    <h3>商標取代</h3>
+    <p>在此版面的 .header 中，會在您要放置商標的位置使用影像預留位置。建議您移除該預留位置，並使用自己的連結商標加以取代。 </p>
+    <p> 請注意，如果要使用「屬性」檢視窗使用 SRC 欄位導覽到商標影像 (而不是移除並取代預留位置)，則必須將行內背景和顯示屬性移除。這些行內樣式只會在瀏覽器中用來顯示商標預留位置，以便達到示範的目的。 </p>
+    <p>若要移除行內樣式，請確定「CSS 樣式」面板已設定為「目前」。選取該影像，然後在「CSS 樣式」面板的「屬性」窗格中，以滑鼠右鍵按一下顯示及背景屬性並加以刪除 (當然，您也可以直接到程式碼中刪除影像或預留位置的行內樣式)。</p>
     <!-- end .content --></div>
+  <div class="footer">
+    <p>頁尾</p>
+    <!-- end .footer --></div>
   <!-- end .container --></div>
 </body>
 </html>
