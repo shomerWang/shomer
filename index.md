@@ -93,54 +93,52 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 	line-height: 0px;
 }
 -->
- <script type="text/javascript" src="http://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=x+JLVSx85Lk=&APIKey=in8W74q0ogpcfW/STwicK8D5QwCdddJf05/7nb+OtDh8R99YN3T0LurV4xato3TpL/fOfylvJ9Wv/khZEsXEWxsBmg+GEj4AuokiNXCh14Rei21U5GtJpIkO++Mq3AguFK/ISDEWn4hMzqgrkxNe1Q=="charset="utf-8"></script>
-	<!--下載後請將yourID及yourkey取代為您申請所取得的APPID及APIKEY方能正確顯示服務-->
-    <script type="text/javascript"> 	
-	var pMap = null;
-	var messageBox = null; //訊息窗格物件
-	
-	function InitWnd() {
-		var pOMap = document.getElementById("TGMap");
-		var mapOptions = {
-			mapTypeControl: true,		//mapTypeControl(關閉地圖類型控制項)
-			navigationControl: true,	//navigationControl(關閉縮放控制列)
-			navigationControlOptions: {  //navigationControlOptions(提供指定縮放控制列)
-controlPosition: TGOS.TGControlPosition.LEFT_CENTER, 
-//controlPosition(設定縮放控制列在地圖的位置)
-navigationControlStyle: TGOS.TGNavigationControlStyle.DEFAULT 
-//navigationControlStyle(設定縮放控制列樣式)
-//(可設定參數有：完整版 / 縮小版(DEFAULT / SMALL))
-},
-			scaleControl: true,			//scaleControl(關閉比例尺控制項)
-			scaleControlOptions: {  //scaleControlOptions(提供指定比例尺控制項)
-controlPosition: TGOS.TGControlPosition.BOTTOM_CENTER 
-// controlPosition (設定比例尺控制項在地圖的位置)
-},
-		};
-		pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3857, mapOptions);	//宣告TGOnlineMap地圖物件並設定坐標系統
-		pMap.setZoom(8);	//指定地圖起始層級
-		pMap.setCenter(new TGOS.TGPoint(121, 24.5));	//指定地圖起始中心點坐標
-				
-		var InfoWindowOptions = {
-			maxWidth: 500,
-            pixelOffset: { x: 0, y: 0 },
-            zIndex: 0
-        };
-		
-		TGOS.TGEvent.addListener(pMap, "click", function (e) {	//加入滑鼠單擊地圖事件監聽器
-			if (messageBox) {
-				messageBox.close(pMap);
-			}
-			
-			var pt = e.point;	//取得滑鼠點擊位置坐標
-			pMap.setCenter(pt);	//地圖平移至點擊位置
-			var level = pMap.getZoom(); //取得目前地圖層級
-			var message = "X坐標: " + pt.x + "<br>Y坐標: " + pt.y + "<br>地圖層級: " + level;	//組合顯示訊息
-			messageBox = new TGOS.TGInfoWindow(message, pt, InfoWindowOptions);	//在點擊位置上開啟訊息窗格, 並寫入坐標及地圖層級
-			messageBox.open(pMap);
-		});
-	}
-</script>
+  <script type="text/javascript" src="http://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=x+JLVSx85Lk=&APIKey=in8W74q0ogpcfW/STwicK8D5QwCdddJf05/7nb+OtDh8R99YN3T0LurV4xato3TpL/fOfylvJ9Wv/khZEsXEWxsBmg+GEj4AuokiNXCh14Rei21U5GtJpIkO++Mq3AguFK/ISDEWn4hMzqgrkxNe1Q=="charset="utf-8"></script>
+           <script type="text/javascript">
+                     var messageBox;                    //訊息視窗物件  
+                     var pMap;                      //初始化地圖物件
+                    
+                     //------------------------------須自行修改的參數,包含點位坐標,訊息視窗內容及圖示檔案來源設定------------------------------
+                     var infotext = '<B>公司點</B><br>基金會辦公室';         //地標名稱及訊息視窗內容
+                     var markerPoint = new TGOS.TGPoint(121.533684 , 25.014829);                              //地標坐標位置
+                     var imgUrl = "http://api.tgos.tw/TGOS_API/images/marker2.png";         //標記點圖示來源
+                     //------------------------------若網頁介面依照範例網頁的預設設定,以下程式碼可不修改---------------------------------------
+                     function InitWnd()
+                     {
+                                //------------------初始化地圖--------------------
+                                var pOMap = document.getElementById("OMap");
+                                var mapOptiions = {
+                                           scaleControl: true,                //不顯示比例尺
+                                           navigationControl: true,     //顯示地圖縮放控制項
+                                           navigationControlOptions: {        //設定地圖縮放控制項
+                                                     controlPosition: TGOS.TGControlPosition.TOP_LEFT,  //控制項位置
+                                                     navigationControlStyle: TGOS.TGNavigationControlStyle.SMALL         //控制項樣式
+                                           },
+                                           mapTypeControl: false                   //不顯示地圖類型控制項
+                                };
+                                pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3857, mapOptiions);//建立地圖,選擇TWD97坐標
+                                pMap.setZoom(11);                                   //初始地圖縮放層級
+                                pMap.setCenter(markerPoint);   //初始地圖中心點
+                                //------------------建立標記點---------------------
+                                var markerImg = new TGOS.TGImage(imgUrl, new TGOS.TGSize(38, 33), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(10, 33));       //設定標記點圖片及尺寸大小
+                                var pTGMarker = new TGOS.TGMarker(pMap, markerPoint,'', markerImg); //建立機關單位標記點
+                                //-----------------建立訊息視窗--------------------
+                                var InfoWindowOptions = {
+                                             maxWidth:4000,       //訊息視窗的最大寬度
+                                             pixelOffset: new TGOS.TGSize(5, -30),         //InfoWindow起始位置的偏移量, 使用TGSize設定, 向右X為正, 向上Y為負 
+                                             zIndex:99                                //視窗堆疊順序
+                                };                                       
+                                messageBox = new TGOS.TGInfoWindow(infotext, markerPoint, InfoWindowOptions);          //建立訊息視窗                                                                  
+                                TGOS.TGEvent.addListener(pTGMarker, "mouseover", openInfoWindow);   //滑鼠監聽事件--開啟訊息視窗
+                                TGOS.TGEvent.addListener(pTGMarker, "mouseout", closeInfoWindow);     //滑鼠監聽事件--關閉訊息視窗
+                     }
+                     function openInfoWindow() {      //開啟訊息視窗函式
+                                messageBox.open(pMap);
+                     }
+                     function closeInfoWindow() {      //關閉訊息視窗函式
+                                messageBox.close();
+                     }
+           </script>
 </style></head>
 
 <body>
