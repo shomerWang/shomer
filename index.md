@@ -13,7 +13,7 @@ body {
 	background-color:#B3DDFF;
 	margin: 0;
 	padding: 0;
-	color: #000;
+	color:#B3DDFF;
 }
 
 /* ~~ 元素/標籤選取器 ~~ */
