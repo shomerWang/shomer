@@ -93,6 +93,55 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 	line-height: 0px;
 }
 -->
+<script type="text/javascript" src="http://api.tgos.nat.gov.tw/TGOS_API/tgos?ver=2&AppID=fLgs33pBrXLLYVAqSGvRqfolPwOZEJuK2x4WYDdLaTgqLqJqlNN9Mg==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uwUgoWbiSaYxDmlVewD8xaokjMmA9+1rJhO3xxM45Pbtiz1pdP08EmaYZYN81ZadJxelrr0Uq4TAFhtOROOv/pDZcyLFPosE/VDnTVw6Kuh9vfrJJZ/qB2gnAYb7u7Khdu589owhlgKbBPMIFitdKCjqZNQIUZTud9IxWJRjkpJtX3DPtbYZHORS/JDfN3sdJIaar4WbWyf9vvPVPKTzFIdEudsyMRbZPZZFMDhQRoDxqWp9O/waakGtYVTEhe1fZQiqLLaSTA93LWFX2fcsRBZwqyD25f5RHQDdahrqNMrNp5yOnaCTwwDq9tvp7KZv9Cu6KA+iLR5A=" charset="utf-8"></script>
+
+	<!--下載後請將yourID及yourkey取代為您申請所取得的APPID及APIKEY方能正確顯示服務-->
+    <script type="text/javascript"> 	
+	var pMap = null;
+	var messageBox = null; //訊息窗格物件
+	
+	function InitWnd() {
+		var pOMap = document.getElementById("TGMap");
+		var mapOptions = {
+			mapTypeControl: true,		//mapTypeControl(關閉地圖類型控制項)
+			navigationControl: true,	//navigationControl(關閉縮放控制列)
+			navigationControlOptions: {  //navigationControlOptions(提供指定縮放控制列)
+controlPosition: TGOS.TGControlPosition.LEFT_CENTER, 
+//controlPosition(設定縮放控制列在地圖的位置)
+navigationControlStyle: TGOS.TGNavigationControlStyle.DEFAULT 
+//navigationControlStyle(設定縮放控制列樣式)
+//(可設定參數有：完整版 / 縮小版(DEFAULT / SMALL))
+},
+			scaleControl: true,			//scaleControl(關閉比例尺控制項)
+			scaleControlOptions: {  //scaleControlOptions(提供指定比例尺控制項)
+controlPosition: TGOS.TGControlPosition.BOTTOM_CENTER 
+// controlPosition (設定比例尺控制項在地圖的位置)
+},
+		};
+		pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3857, mapOptions);	//宣告TGOnlineMap地圖物件並設定坐標系統
+		pMap.setZoom(8);	//指定地圖起始層級
+		pMap.setCenter(new TGOS.TGPoint(121, 24.5));	//指定地圖起始中心點坐標
+				
+		var InfoWindowOptions = {
+			maxWidth: 500,
+            pixelOffset: { x: 0, y: 0 },
+            zIndex: 0
+        };
+		
+		TGOS.TGEvent.addListener(pMap, "click", function (e) {	//加入滑鼠單擊地圖事件監聽器
+			if (messageBox) {
+				messageBox.close(pMap);
+			}
+			
+			var pt = e.point;	//取得滑鼠點擊位置坐標
+			pMap.setCenter(pt);	//地圖平移至點擊位置
+			var level = pMap.getZoom(); //取得目前地圖層級
+			var message = "X坐標: " + pt.x + "<br>Y坐標: " + pt.y + "<br>地圖層級: " + level;	//組合顯示訊息
+			messageBox = new TGOS.TGInfoWindow(message, pt, InfoWindowOptions);	//在點擊位置上開啟訊息窗格, 並寫入坐標及地圖層級
+			messageBox.open(pMap);
+		});
+	}
+</script>
 </style></head>
 
 <body>
@@ -101,15 +150,10 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
   <div class="header"><img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" />
     <!-- end .header --></div>
   <div class="content">
-    <h1>王祖修的網頁</h1>
-    <p>請注意，這些版面的 CSS 都有詳細的註解。如果您是在「設計」檢視中進行大部分的作業，可以看一下程式碼來取得有關使用流動版面 CSS 的提示。您可以在啟動您的網站之前，將這些註解移除。有關這些 CSS 版面所使用的技巧之詳細資訊，請至 Adobe 開發人員中心閱讀本文 - <a href=http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts</a>。</p>
-    <h2>版面</h2>
-    <p>由於這是單欄的版面，所以 .content 並非浮動。 </p>
-    <h3>商標取代</h3>
-    <p>在此版面的 .header 中，會在您要放置商標的位置使用影像預留位置。建議您移除該預留位置，並使用自己的連結商標加以取代。 </p>
-    <p> 請注意，如果要使用「屬性」檢視窗使用 SRC 欄位導覽到商標影像 (而不是移除並取代預留位置)，則必須將行內背景和顯示屬性移除。這些行內樣式只會在瀏覽器中用來顯示商標預留位置，以便達到示範的目的。 </p>
-    <p>若要移除行內樣式，請確定「CSS 樣式」面板已設定為「目前」。選取該影像，然後在「CSS 樣式」面板的「屬性」窗格中，以滑鼠右鍵按一下顯示及背景屬性並加以刪除 (當然，您也可以直接到程式碼中刪除影像或預留位置的行內樣式)。</p>
-    <!-- end .content --></div>
+    TGOS MAP API
+<div class="TGMap" id="TGMap" style="width: 1280px; height: 800px; border: 1px solid #C0C0C0;">
+    </div>
+</div>
   <div class="footer">
     <p><a herf="mailto:shomerwang@gmail.com">聯絡我</a></p>
     <!-- end .footer --></div>
