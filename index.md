@@ -95,18 +95,18 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 }
 -->
  
-</style>
-</head>
+</style></head>
 
 <body>
 
 <div class="container">
   <div class="header">
-    <p><img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;"/><p>
+    <img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" />
   </div>
   <div class="content">
   <iframe width="100%" height="520" frameborder="0" src="https://shomerwang.carto.com/viz/61869c0c-d25a-11e6-953c-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-    <div class="container">
+  
+</div>
   <div class="footer">
     <h2><a href="mailto:shomerwang@gmail.com">聯絡我</a></h2>
     <!-- end .footer --></div>
