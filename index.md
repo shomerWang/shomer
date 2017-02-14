@@ -148,7 +148,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
     <!-- end .header --></div>
   <div class="content">
     TGOS MAP API
-<div class="TGMap" id="TGMap" style="width: 640px; height: 500px; border: 1px solid #C0C0C0;">
+<div class="TGMap" id="TGMap" style="width: 100%; height: 500px; border: 1px solid #C0C0C0;">
     </div>
 </div>
   <div class="footer">
