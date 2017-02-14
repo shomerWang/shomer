@@ -11,7 +11,7 @@
 <!--
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background-color: #B3FFFF;
+	background-color:#B3DDFF;
 	margin: 0;
 	padding: 0;
 	color: #000;
