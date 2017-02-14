@@ -1,4 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -112,7 +111,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
     <p>若要移除行內樣式，請確定「CSS 樣式」面板已設定為「目前」。選取該影像，然後在「CSS 樣式」面板的「屬性」窗格中，以滑鼠右鍵按一下顯示及背景屬性並加以刪除 (當然，您也可以直接到程式碼中刪除影像或預留位置的行內樣式)。</p>
     <!-- end .content --></div>
   <div class="footer">
-    <p><a herf="shomerwang@gmail.com">聯絡我</a></p>
+    <p><a herf="mailto:shomerwang@gmail.com">聯絡我</a></p>
     <!-- end .footer --></div>
   <!-- end .container --></div>
 </body>
