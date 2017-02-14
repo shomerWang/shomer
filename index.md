@@ -101,7 +101,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 
 <div class="container">
   <div class="header">
-    <p><img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" /></p>
+    <p><img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" /><h1>祖修的網站</h1><p>
   </div>
   <div class="content">
   <iframe width="100%" height="520" frameborder="0" src="https://shomerwang.carto.com/viz/61869c0c-d25a-11e6-953c-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
