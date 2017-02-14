@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- TemplateBeginEditable name="doctitle" -->
-<title>無標題文件</title>
+<title>祖修的首頁</title>
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
@@ -102,7 +102,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
   <div class="header"><a href="#"><img src="" alt="在這裡插入商標" name="Insert_logo" width="20%" height="90" id="Insert_logo" style="background-color: #8090AB; display:block;" /></a> 
     <!-- end .header --></div>
   <div class="content">
-    <h1>說明</h1>
+    <h1>王祖修的網頁</h1>
     <p>請注意，這些版面的 CSS 都有詳細的註解。如果您是在「設計」檢視中進行大部分的作業，可以看一下程式碼來取得有關使用流動版面 CSS 的提示。您可以在啟動您的網站之前，將這些註解移除。有關這些 CSS 版面所使用的技巧之詳細資訊，請至 Adobe 開發人員中心閱讀本文 - <a href=http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts</a>。</p>
     <h2>版面</h2>
     <p>由於這是單欄的版面，所以 .content 並非浮動。 </p>
