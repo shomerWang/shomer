@@ -93,8 +93,7 @@ a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽
 	line-height: 0px;
 }
 -->
-<script type="text/javascript" src="http://api.tgos.nat.gov.tw/TGOS_API/tgos?ver=2&AppID=fLgs33pBrXLLYVAqSGvRqfolPwOZEJuK2x4WYDdLaTgqLqJqlNN9Mg==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uwUgoWbiSaYxDmlVewD8xaokjMmA9+1rJhO3xxM45Pbtiz1pdP08EmaYZYN81ZadJxelrr0Uq4TAFhtOROOv/pDZcyLFPosE/VDnTVw6Kuh9vfrJJZ/qB2gnAYb7u7Khdu589owhlgKbBPMIFitdKCjqZNQIUZTud9IxWJRjkpJtX3DPtbYZHORS/JDfN3sdJIaar4WbWyf9vvPVPKTzFIdEudsyMRbZPZZFMDhQRoDxqWp9O/waakGtYVTEhe1fZQiqLLaSTA93LWFX2fcsRBZwqyD25f5RHQDdahrqNMrNp5yOnaCTwwDq9tvp7KZv9Cu6KA+iLR5A=" charset="utf-8"></script>
-
+ <script type="text/javascript" src="http://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=x+JLVSx85Lk=&APIKey=in8W74q0ogpcfW/STwicK8D5QwCdddJf05/7nb+OtDh8R99YN3T0LurV4xato3TpL/fOfylvJ9Wv/khZEsXEWxsBmg+GEj4AuokiNXCh14Rei21U5GtJpIkO++Mq3AguFK/ISDEWn4hMzqgrkxNe1Q=="charset="utf-8"></script>
 	<!--下載後請將yourID及yourkey取代為您申請所取得的APPID及APIKEY方能正確顯示服務-->
     <script type="text/javascript"> 	
 	var pMap = null;
@@ -151,7 +150,7 @@ controlPosition: TGOS.TGControlPosition.BOTTOM_CENTER
     <!-- end .header --></div>
   <div class="content">
     TGOS MAP API
-<div class="TGMap" id="TGMap" style="width: 1280px; height: 800px; border: 1px solid #C0C0C0;">
+<div class="TGMap" id="TGMap" style="width: 100%; height: 100%; border: 1px solid #C0C0C0;">
     </div>
 </div>
   <div class="footer">
