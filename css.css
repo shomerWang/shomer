@@ -31,7 +31,7 @@ a:visited {
 }
 a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽的使用者，也和使用滑鼠的使用者一樣擁有相同的滑過體驗。 */
 	text-decoration: none;
-	color: #B3DDFF;
+	color: #ffffff;
 }
 
 /* ~~ 這個容器環繞著所有其他的 Div，並依百分比設定其寬度 ~~ */
