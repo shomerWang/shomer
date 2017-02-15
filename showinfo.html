@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<script src="SpryAssets/xpath.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+<script type="text/javascript">
+var ds1 = new Spry.Data.XMLDataSet("https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeX&category=5", "XML_Head");
+</script>
+</head>
+
+<body>
+<div spry:region="ds1">
+  <table>
+    <tr>
+      <th spry:sort="eventItem">EventItem</th>
+      <th spry:sort="@status">Status</th>
+      <th spry:sort="@total">Total</th>
+      <th spry:sort="@version">Version</th>
+    </tr>
+    <tr spry:repeat="ds1">
+      <td>{eventItem}</td>
+      <td>{@status}</td>
+      <td>{@total}</td>
+      <td>{@version}</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
