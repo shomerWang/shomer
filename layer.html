@@ -19,7 +19,7 @@
 		if (kmlLayer) {
 			 kmlLayer.removeKml();							//假如圖面上已經有KML疊加層, 則先移除掉現有的kml圖層再加入新圖層
 		}
-		var list = document.getElementById("addurl");
+		var list = document.getElementById("postkml");
 		var url = list.options[list.selectedIndex].text;	//取得下拉選單的KML網址
 		kmlLayer = new TGOS.TGKmlLayer(url, {				//設定KML圖層
 				map: pMap,									//設定欲疊加的底圖
@@ -31,15 +31,18 @@
 </head>
 <body style="margin:0px" onLoad="InitWnd();">
 	<div id="TGMap" style="width:100%; height:90%; border: 1px solid #C0C0C0;"></div>
-	<br/>
-  <input name="addurl" type="text" ;style="width:200px ;height:30px";>
-  <!--建立下拉選單, 提供預設兩組KML網址-->
+	<form action="" method="post" name="加入KML" id="postkml" title="post kml" onClick="&quot;&quot;">
+	  <label for="addurl"></label>
+	  <input type="text" name="addurl" id="addurl">
+	  <input type="submit" name="送出" id="送出" value="送出">
+	</form>
+    <br/>
+    <!--建立下拉選單, 提供預設兩組KML網址-->
 	  <!--<select id="urlList">
 		<option>http://api.tgos.tw/TGOS_API/wrarb.kml</option>
 		<option>http://api.tgos.tw/TGOS_API/GWREGION.kml</option>
 		<option>""</option>
 	</select>-->
 	  <br/>
-<input name="送出KML" type="button" onClick="AddKML();" value="上傳KML">
     <!--<input name="送出" type="submit" onClick="AddKML();" value="加入KML圖層">-->
 </html>                            
