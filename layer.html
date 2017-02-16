@@ -23,7 +23,7 @@
 		var url = list.options[list.selectedIndex].text;	//取得下拉選單的KML網址
 		kmlLayer = new TGOS.TGKmlLayer(url, {				//設定KML圖層
 				map: pMap,									//設定欲疊加的底圖
-				suppressInfoWindows: true,				//可點選KML圖徵顯示訊息視窗, 若設為true則無法顯示訊息視窗
+				suppressInfoWindows: false,				//可點選KML圖徵顯示訊息視窗, 若設為true則無法顯示訊息視窗
 				preserveViewport: true						//疊加KML後將圖面縮放至KML的範圍, 若設為false則取消這個功能
             });
 	}
