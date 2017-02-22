@@ -46,7 +46,7 @@
             "panorama": "./examplepano.jpg",
             "hotSpots": [
                 {
-                    "pitch": 0,
+                    "pitch": 180,
                     "yaw": 100,
                     "type": "scene",
                     "text": "Pond (cube)",
