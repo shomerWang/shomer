@@ -13,8 +13,14 @@
 <body>
 
 <div class="container">
-  <div class="header">
-    <img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" />
+  <div class="header"><table width="100%" border="0">
+  <tr>
+    <td width="16%">
+    <img src="https://raw.githubusercontent.com/shomerWang/shomerpage/master/logo.jpg" width="145" height="145" id="Insert_logo" style="background-color: #B3DDFF; display:block;" /></td>
+    <td width="84%"><h1>祖修的測試小站</h1></td>
+  </tr>
+</table>
+
   </div>
   <div class="content">
   <iframe width="100%" height="520px" frameborder="0" src="https://shomerwang.carto.com/viz/61869c0c-d25a-11e6-953c-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
@@ -30,3 +36,4 @@
   <!-- end .container --></div>
 </body>
 </html>
+
