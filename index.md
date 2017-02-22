@@ -21,6 +21,7 @@
   <iframe width="100%" height ="520px"  frameborder="0" src="https://shomerwang.github.io/shomerpage/litemap.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
  <iframe width="100%" height ="520px"  frameborder="0" src="https://shomerwang.github.io/shomerpage/720photo.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
      <p><h3><a href="litemap.html">地圖測試</a></h3><p>
+     <p><h3><a href="720photo.html">全景照片測試</a></h3><p>
   <!--<p><h3><a href="3D.html">TGOS 3D</a></h3><p>--->
   
 </div>
