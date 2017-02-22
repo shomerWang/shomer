@@ -110,8 +110,8 @@
 }
 
 .pnlm-fullscreen-toggle-button, .pnlm-orientation-button, .pnlm-hot-spot-debug-indicator {
-    width: 26px;
-    height: 26px;
+    width: 60px;
+    height: 60px;
 }
 
 .pnlm-hot-spot-debug-indicator {
