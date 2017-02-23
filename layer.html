@@ -13,7 +13,7 @@
         function addkml() {
             var kmlLayer = new TGOS.TGKmlLayer('https://shomerwang.github.io/shomerpage/DWSProtection.kml', {
                 map: map,
-                suppressInfoWindows: false,
+                suppressInfoWindows: true,
                 preserveViewport: true
             }, function() {
 				var meta = kmlLayer.getMetadata();
@@ -22,7 +22,7 @@
     </script>
 </head>
 <body onload="main()">
-    <div style="height: 100%; width:100%" id="TGMap">
+    <div style="height: 90%; width:100%" id="TGMap">
     </div>
     <input type="button" value="addkml" onclick="addkml();" />
 </body>
