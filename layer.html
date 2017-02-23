@@ -11,7 +11,7 @@
             map = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826);
         }
         function addkml() {
-            var kmlLayer = new TGOS.TGKmlLayer('https://api.tgos.nat.gov.tw/TGOS_API/wrarb.kml', {
+            var kmlLayer = new TGOS.TGKmlLayer('https://shomerwang.github.io/shomerpage/DWSProtection.kml', {
                 map: map,
                 suppressInfoWindows: false,
                 preserveViewport: true
@@ -22,7 +22,7 @@
     </script>
 </head>
 <body onload="main()">
-    <div style="height: 480px; width: 720px" id="TGMap">
+    <div style="height: 100%; width:100%" id="TGMap">
     </div>
     <input type="button" value="addkml" onclick="addkml();" />
 </body>
