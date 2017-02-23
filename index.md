@@ -27,10 +27,10 @@
   
   <iframe width="100%" height ="520px"  frameborder="0" src="https://shomerwang.github.io/shomerpage/litemap.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
   
-<iframe width="100%" height ="520px"  frameborder="0" src="https://goo.gl/photos/pA4NNfGaqepSjeKp9" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe width="100%" height ="520px"  frameborder="0" src="https://shomerwang.github.io/shomerpage/720photo.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
       <p><h3><a href="litemap.html">地圖測試</a></h3><p>
-     <p><h3><a href="https://photos.google.com/share/AF1QipMNua5OXiSOUjI3q6SQhM9-id9wLyYJAyrz0Om9PzyZ4JXnA472_9qb3ccp34JjDQ/photo/AF1QipPUYTdo8ziSkocbdzg1lduJ0RCBMIR8Cr2-_m1m?key=dEV2Y3hPU3I1TXg3VldNTEVXdnJPOUZrTnE3WHp3">全景照片測試</a></h3><p>
+     <p><h3><a href="https://shomerwang.github.io/shomerpage/720photo.html">全景照片測試</a></h3><p>
   <!--<p><h3><a href="3D.html">TGOS 3D</a></h3><p>--->
   </div>
   <div class="footer">
