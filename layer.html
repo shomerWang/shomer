@@ -15,29 +15,29 @@
 		pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826, mapOptions);	//宣告TGOnlineMap地圖物件並設定坐標系統
 	}
 	
-	function AddKML() {
-		if (kmlLayer) {
-			 kmlLayer.removeKml();							//假如圖面上已經有KML疊加層, 則先移除掉現有的kml圖層再加入新圖層
-		}
-		var list = document.getElementById("urlList");
-		var url = list.options[list.selectedIndex].text;	//取得下拉選單的KML網址
-		kmlLayer = new TGOS.TGKmlLayer(url, {				//設定KML圖層
-				map: pMap,									//設定欲疊加的底圖
-				suppressInfoWindows: false,				//可點選KML圖徵顯示訊息視窗, 若設為true則無法顯示訊息視窗
-				preserveViewport: true						//疊加KML後將圖面縮放至KML的範圍, 若設為false則取消這個功能
-            });
+	function addkml() {
+var kmlLayer = newTGOS.TGKmlLayer('https://shomerwang.github.io/shomerpage/DWSProtection.kml', { 
+//加入KML圖層到地圖
+map: map,
+suppressInfoWindows: false,
+preserveViewport: true
+}, function() {
+var meta = kmlLayer.getMetadata();
+});
+}
 	}
 </script>            
 </head>
 <body style="margin:0px" onLoad="InitWnd();">
 	<div id="TGMap" style="width:100%; height:90%; border: 1px solid #C0C0C0;"></div>
 	<br/>
-	<!--建立下拉選單, 提供預設兩組KML網址-->
+	<!--
 	<select id="urlList">
 		<option>https://shomerwang.github.io/shomerpage/DWSProtection.kml</option>
 		<option>https://fhy.wra.gov.tw/Pub_Web_2011/kml/WRAWarm.kml&ndctype=KML&ndcnid=5981</option>
 		<option>""</option>
 	</select>
 	<br/>
-   	<input type="button" value="加入KML圖層" onClick="AddKML();">
+   	<input type="button" value="加入KML圖層" onClick="AddKML();">建立下拉選單, 提供預設兩組KML網址-->
+</body>
 </html>                            
