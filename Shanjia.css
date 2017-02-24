@@ -28,14 +28,14 @@ img, object, embed, video {
 
 /* 行動版面: 480px 以下。 */
 .h1{
-	font-size: 36px;
+	font-size: 40px;
 	color: #03C;
 	font-style: normal;
 	font-family: "微軟正黑體";
 	
 	}
 .h4{
-	font-size: 12px;
+	font-size: 18px;
 	color:#333;
 	font-family:"微軟正黑體"
 	}
