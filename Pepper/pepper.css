@@ -53,6 +53,15 @@ img, object, embed, video {
 	bottom:5px
 	
 }
+#topbotton{
+	background: #99cccc;
+	color: #FFF;
+	font-family: "Yu Gothic UI Semibold";
+	font-size:18px
+	text-align:center;
+		
+	
+	}
 
 /* 表格版面: 481px 到 768px。樣式繼承自: 行動版面。 */
 
@@ -79,6 +88,9 @@ img, object, embed, video {
 	color: #999;
 	bottom:5px
 }
+#topbotton{
+	background:#99cccc
+	}
 }
 
 /* 桌面版面: 769px 到最大 1232px。樣式繼承自: 行動版面和表格版面。 */

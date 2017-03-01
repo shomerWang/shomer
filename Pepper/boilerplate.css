@@ -210,8 +210,20 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
    表格
    ========================================================================== */
 
-table { border-collapse: collapse; border-spacing: 0; }
-td { vertical-align: top; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+	font-family: "Yu Gothic UI Semibold";
+	font-size: 18px;
+	color: #FFF;
+	background-color: #99cccc;
+	cursor: nw-resize;
+}
+td {
+	vertical-align: center;
+	
+}
 
 
 /* ==|== 主要樣式 =====================================================
