@@ -50,6 +50,7 @@ img, object, embed, video {
 	display: block;
 	font-family: Calibri;
 	color: #999;
+	bottom:5px
 	
 }
 
@@ -76,6 +77,7 @@ img, object, embed, video {
 	display: block;
 	font-family: Calibri;
 	color: #999;
+	bottom:5px
 }
 }
 
@@ -104,5 +106,6 @@ img, object, embed, video {
 	display: block;
 	font-family: Calibri;
 	color: #999;
+	bottom:5px
 }
 }
