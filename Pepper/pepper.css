@@ -37,9 +37,10 @@ img, object, embed, video {
 }
 #LayoutDiv1 {
 	clear: both;
-	float: left;
+	float: center;
 	margin-left: 0;
 	width: 100%;
+	background:#99cccc
 	display: block;
 }
 #copyright1 {
@@ -62,6 +63,40 @@ img, object, embed, video {
 		
 	
 	}
+#LayoutDiv2{
+	clear: both;
+		
+	
+	float: left;
+		
+	
+	margin-left: 0;
+		
+	
+	width: 100%;
+		
+	
+	display: block;
+		
+	
+	}
+#LayoutDiv3{
+	clear: both;
+		
+	
+	float: left;
+		
+	
+	margin-left: 0;
+		
+	
+	width: 100%;
+		
+	
+	display: block;
+		
+	
+	}
 
 /* 表格版面: 481px 到 768px。樣式繼承自: 行動版面。 */
 
@@ -73,10 +108,12 @@ img, object, embed, video {
 }
 #LayoutDiv1 {
 	clear: both;
-	float: left;
+	float: center;
 	margin-left: 0;
 	width: 100%;
 	display: block;
+	background:#99cccc
+	
 }
 #copyright1 {
 	clear: both;
@@ -90,6 +127,20 @@ img, object, embed, video {
 }
 #topbotton{
 	background:#99cccc
+	}
+#LayoutDiv2{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	}
+#LayoutDiv3{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
 	}
 }
 
@@ -105,19 +156,34 @@ img, object, embed, video {
 }
 #LayoutDiv1 {
 	clear: both;
-	float: left;
+	float: center;
 	margin-left: 0;
 	width: 100%;
+	background:#99cccc
 	display: block;
 }
 #copyright1 {
 	clear: both;
-	float: left;
+	float:center;
 	margin-left: 0;
 	width: 100%;
 	display: block;
 	font-family: Calibri;
 	color: #999;
 	bottom:5px
+}
+#LayoutDiv2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
 }
 }

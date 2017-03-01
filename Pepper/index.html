@@ -8,9 +8,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pepper</title>
+<title>未命名文件</title>
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="pepper.css" rel="stylesheet" type="text/css">
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
 <!-- 
 若要深入了解檔案頂端 html 標籤周圍的條件式註解:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
@@ -25,25 +26,35 @@ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="respond.min.js"></script>
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="gridContainer clearfix">
-
-<div id="topbotton">
-<table width="100%" border="0">
-  <tr>
-    <td width="19%"><img src="pic/indexicon.png" alt="index" width=155 height=67></td>
-    <td width="27%">可以做</td>
-    <td width="18%">已有的主人</td>
-    <td width="18%">還可以做</td>
-    <td width="18%">哪裡有</td>
-  </tr>
-</table>
+<div id="LayoutDiv1">
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href="index.html"><img src="pic/indexicon.png" width="230" height="100"></a>      </li>
+    <li><a href="#">可以做</a></li>
+    <li><a class="MenuBarItemSubmenu" href="#">已有的主人</a>
+      <ul>
+        <li><a class="MenuBarItemSubmenu" href="#">項目 3.1</a>
+          <ul>
+            <li><a href="#">項目 3.1.1</a></li>
+            <li><a href="#">項目 3.1.2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">項目 3.2</a></li>
+        <li><a href="#">項目 3.3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">還可以做</a></li>
+    <li><a href="#">哪裡找</a></li>
+  </ul>
 </div>
-  <div id="LayoutDiv1">使用「插入面板」以取得其他流變格線版面 Div 標籤。 附註: 所有版面 Div 標籤都必須直接插入「gridContainer」Div 標籤中。 目前不支援巢狀版面 Div 標籤。</div>
-  <div id= "copyright1">
-  <p>「© SoftBank Robotics Corp. All rights reserved.」</p>
-  <p>「© SoftBank Robotics Corp.」</p></div>
-</div>
+<div id="LayoutDiv2"></div>
+<div id="LayoutDiv3"><p>「© SoftBank Robotics Corp. All rights reserved.」</p>
+  <p>「© SoftBank Robotics Corp.」</p></div></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
 </body>
 </html>
