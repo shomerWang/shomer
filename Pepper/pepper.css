@@ -51,51 +51,28 @@ img, object, embed, video {
 	display: block;
 	font-family: Calibri;
 	color: #999;
-	bottom:5px
-	
+	bottom:5px	
 }
 #topbotton{
 	background: #99cccc;
 	color: #FFF;
 	font-family: "Yu Gothic UI Semibold";
 	font-size:18px
-	text-align:center;
-		
-	
+	text-align:center;			
 	}
 #LayoutDiv2{
-	clear: both;
-		
-	
-	float: left;
-		
-	
-	margin-left: 0;
-		
-	
-	width: 100%;
-		
-	
-	display: block;
-		
-	
+	clear: both;			
+	float: left;	
+	margin-left: 0;	
+	width: 100%;	
+	display: block;	
 	}
 #LayoutDiv3{
-	clear: both;
-		
-	
-	float: left;
-		
-	
-	margin-left: 0;
-		
-	
-	width: 100%;
-		
-	
-	display: block;
-		
-	
+	clear: both;	
+	float: left;	
+	margin-left: 0;			
+	width: 100%;	
+	display: block;	
 	}
 
 /* 表格版面: 481px 到 768px。樣式繼承自: 行動版面。 */
