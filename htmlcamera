@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,user-scalable=no"/>
+<link rel="stylesheet" type="text/css" href="global.css" />
+<title>HTML5 HTML Media Capture | Mobile HTML5 test suite</title>
+
+<script>
+</script>
+<style>
+</style>
+
+</head>
+
+<body >
+
+
+	<h1>HTML5 HTML Media Capture</h1>
+ 
+   <div id="standard">
+    W3C Standard: Media Capture    
+    </div>
+ 	
+    <div id="instructions">
+        </div>
+    
+        <div id="content">
+	<p>Capture Image: <input type="file" accept="image/*" id="capture" capture="camera"> 
+
+<p>Capture Audio: <input type="file" accept="audio/*" id="capture" capture="microphone"> 
+
+<p>Capture Video: <input type="file" accept="video/*" id="capture" capture="camcorder"> 
+
+    </div>   
+     
+    
+    
+    <div id="code">
+    	
+    	        
+    	  
+        
+    	    	<h2>html body</h2>
+    	<code>&lt;p&gt;Capture Image: &lt;input type=&quot;file&quot; accept=&quot;image/*&quot; id=&quot;capture&quot; capture=&quot;camera&quot;&gt; <br />
+<br />
+&lt;p&gt;Capture Audio: &lt;input type=&quot;file&quot; accept=&quot;audio/*&quot; id=&quot;capture&quot; capture=&quot;microphone&quot;&gt; <br />
+<br />
+&lt;p&gt;Capture Video: &lt;input type=&quot;file&quot; accept=&quot;video/*&quot; id=&quot;capture&quot; capture=&quot;camcorder&quot;&gt; <br />
+<br />
+</code>
+                        
+    </div>
+
+	<a href="?id=24">Next test</a>
+
+	<a href="./">More tests</a>
+
+<footer>
+by <a href="http://firt.mobi" target="_blank">@firt</a> for <a href="http://mobilehtml5.org">MobileHTML5.org</a>
+</footer>
+</body>
+</html>
